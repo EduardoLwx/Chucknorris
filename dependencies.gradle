@@ -1,0 +1,28 @@
+ext {
+
+    // Dependencies Versions
+    appcompatVersion = '1.0.0'
+    constraintLayoutVersion = '1.1.2'
+    kotlin_version = '1.3.10'
+
+    // Test Dependencies Versions
+    espressoCoreVersion = '3.1.0'
+    junitVersion = '4.12'
+    runnerVersion = '1.0.0'
+    testCoreVersion = '1.0.0'
+
+    Dependencies = [
+            appcompat: "androidx.appcompat:appcompat:$appcompatVersion",
+            constraintLayout: "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            kotlinStdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    ]
+
+
+    TestDependencies = [
+            espressoCore: "androidx.test.espresso:espresso-core:$espressoCoreVersion",
+            junit: "junit:junit:$junitVersion",
+            runner: "androidx.test.ext:junit:$runnerVersion",
+            testCore: "androidx.test:core:$testCoreVersion"
+    ]
+
+}

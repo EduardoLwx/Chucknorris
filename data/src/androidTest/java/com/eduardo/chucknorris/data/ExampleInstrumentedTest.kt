@@ -1,4 +1,4 @@
-package com.eduardo.chucknorris
+package com.eduardo.chucknorris.data
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
@@ -12,7 +12,7 @@ import org.junit.Assert.*
 /**
  * Instrumented test, which will execute on an Android device.
  *
- * See [testing documentation](http://d.android.com/tools/testing).
+ * @see [Testing documentation](http://d.android.com/tools/testing)
  */
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
@@ -20,6 +20,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext: Context = ApplicationProvider.getApplicationContext()
-        assertEquals("com.eduardo.chucknorris", appContext.packageName)
+        assertEquals("com.eduardo.chucknorris.data.test", appContext.packageName)
     }
 }
