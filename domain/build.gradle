@@ -5,6 +5,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation Dependencies.kotlinStdlib
+    implementation Dependencies.rxKotlin
+
+    testImplementation TestDependencies.junit
+    testImplementation TestDependencies.mockito
 }
 
 sourceCompatibility = "7"
