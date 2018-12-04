@@ -29,8 +29,16 @@ dependencies {
     implementation project(':domain')
     implementation Dependencies.appcompat
     implementation Dependencies.kotlinStdlib
+    implementation Dependencies.gson
+    implementation Dependencies.gsonConverter
+    implementation Dependencies.okhttp
+    implementation Dependencies.okhttpLogging
+    implementation Dependencies.retrofit
+    implementation Dependencies.retrofitRxAdapter
 
     testImplementation TestDependencies.junit
+    testImplementation TestDependencies.kotlinJUnit
+    testImplementation TestDependencies.mockito
     androidTestImplementation TestDependencies.testCore
     androidTestImplementation TestDependencies.runner
     androidTestImplementation TestDependencies.espressoCore
