@@ -3,24 +3,49 @@ ext {
     // Dependencies Versions
     appcompatVersion = '1.0.0'
     constraintLayoutVersion = '1.1.2'
-    kotlin_version = '1.3.10'
+    daggerVersion = '2.19'
+    daggerCompilerVersion = '2.19'
+    gsonVersion = '2.8.5'
+    gsonConverterVersion = '2.5.0'
+    kotlinVersion = '1.3.10'
+    okhttpVersion = '3.12.0'
+    okhttpLoggingVersion = '3.12.0'
+    picassoVersion = '2.71828'
+    recyclerViewVersion = '1.0.0'
+    retrofit = '2.5.0'
+    retrofitRxAdapterVersion = '2.5.0'
 
     // Test Dependencies Versions
     espressoCoreVersion = '3.1.0'
     junitVersion = '4.12'
+    mockitoVersion = '2.0.0'
     runnerVersion = '1.0.0'
+    rxKotlinVersion = '2.3.0'
     testCoreVersion = '1.0.0'
 
     Dependencies = [
             appcompat: "androidx.appcompat:appcompat:$appcompatVersion",
             constraintLayout: "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
-            kotlinStdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+            dagger: "com.google.dagger:dagger:$daggerVersion",
+            daggerCompiler: "com.google.dagger:dagger-compiler:$daggerCompilerVersion",
+            gson: "com.google.code.gson:gson:$gsonVersion",
+            gsonConverter: "com.squareup.retrofit2:converter-gson:$gsonConverterVersion",
+            kotlinStdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+            okhttp: "com.squareup.okhttp3:okhttp:$okhttpVersion",
+            okhttpLogging: "com.squareup.okhttp3:logging-interceptor:$okhttpLoggingVersion",
+            picasso: "com.squareup.picasso:picasso:$picassoVersion",
+            recyclerView: "androidx.recyclerview:recyclerview:$recyclerViewVersion",
+            retrofit: "com.squareup.retrofit2:retrofit:$retrofit",
+            retrofitRxAdapter: "com.squareup.retrofit2:adapter-rxjava2:$retrofitRxAdapterVersion",
+            rxKotlin: "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
     ]
 
 
     TestDependencies = [
             espressoCore: "androidx.test.espresso:espresso-core:$espressoCoreVersion",
             junit: "junit:junit:$junitVersion",
+            kotlinJUnit: "org.jetbrains.kotlin:kotlin-test-junit:${kotlinVersion}",
+            mockito:  "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoVersion",
             runner: "androidx.test.ext:junit:$runnerVersion",
             testCore: "androidx.test:core:$testCoreVersion"
     ]
