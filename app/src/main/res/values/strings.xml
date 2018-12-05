@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Chucknorris</string>
+    <string name="choose_a_category">Choose a category</string>
+    <string name="unexpected_error">Sorry,\nan unexpected error occurred</string>
+    <string name="connection_error">No internet connection,\nplease check your internet settings </string>
+    <string name="button_try_again">Try Again</string>
+    <string name="content_description_joke_icon">Joke Icon</string>
+    <string name="content_description_error_icon">Error Icon</string>
 </resources>

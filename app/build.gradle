@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -30,6 +32,12 @@ dependencies {
     implementation Dependencies.kotlinStdlib
     implementation Dependencies.appcompat
     implementation Dependencies.constraintLayout
+    implementation Dependencies.dagger
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0-alpha1'
+    kapt Dependencies.daggerCompiler
+    implementation Dependencies.recyclerView
+    implementation Dependencies.rxKotlin
+    implementation Dependencies.picasso
 
     testImplementation TestDependencies.junit
     androidTestImplementation TestDependencies.testCore
